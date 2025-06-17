@@ -16,7 +16,6 @@ logs/
 *.log
 
 # Build outputs
-public/assets/css/
 dist/
 build/
 
