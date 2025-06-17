@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  input, textarea, select {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-navy text-white px-8 py-4 rounded-full font-semibold hover:bg-navy/90 transition-all hover:scale-105 shadow-lg;
+  }
+  
+  .btn-secondary {
+    @apply border-2 border-navy text-navy px-8 py-4 rounded-full font-semibold hover:bg-navy hover:text-white transition-all;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-md p-8 transition-all duration-300;
+  }
+  
+  .hover-lift {
+    @apply transition-transform duration-300 ease-out;
+  }
+  
+  .hover-lift:hover {
+    @apply transform -translate-y-1 shadow-xl;
+  }
+  
+  .fade-in {
+    @apply animate-fadeIn;
+  }
+  
+  .perfect-clean-logo {
+    @apply w-12 h-12 transition-transform duration-300 hover:scale-105;
+  }
+  
+  .whatsapp-btn {
+    @apply bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-3 rounded-full font-medium flex items-center shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:scale-105;
+  }
+  
+  .notification {
+    @apply animate-slideInRight;
+  }
+  
+  .focus-visible {
+    @apply outline-2 outline-navy outline-offset-2;
+  }
+  
+  .loading {
+    @apply pointer-events-none opacity-70;
+  }
+  
+  .btn-disabled {
+    @apply opacity-50 cursor-not-allowed pointer-events-none;
+  }
+}
+
+@layer utilities {
+  .mobile-menu-btn {
+    @apply relative w-8 h-6 cursor-pointer;
+  }
+  
+  .mobile-menu-btn span {
+    @apply block absolute h-1 w-full bg-navy rounded-sm opacity-100 left-0 transition-all duration-300 ease-in-out;
+  }
+  
+  .mobile-menu-btn span:nth-child(1) {
+    @apply top-0;
+  }
+  
+  .mobile-menu-btn span:nth-child(2) {
+    @apply top-2.5;
+  }
+  
+  .mobile-menu-btn span:nth-child(3) {
+    @apply top-5;
+  }
+  
+  .mobile-menu-btn.active span:nth-child(1) {
+    @apply top-2.5 rotate-45;
+  }
+  
+  .mobile-menu-btn.active span:nth-child(2) {
+    @apply opacity-0 -left-16;
+  }
+  
+  .mobile-menu-btn.active span:nth-child(3) {
+    @apply top-2.5 -rotate-45;
+  }
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  body {
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: contain;
+  }
+  
+  .hover-lift:hover {
+    transform: none;
+  }
+  
+  input, select, textarea {
+    font-size: 16px !important; /* Prevent zoom on iOS */
+    border-radius: 0;
+    -webkit-appearance: none;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (prefers-contrast: high) {
+  .bg-navy {
+    background-color: #0F1437 !important;
+  }
+  .text-navy {
+    color: #0F1437 !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print, header, .fixed, .sticky {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}
