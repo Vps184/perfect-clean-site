@@ -6,12 +6,12 @@
     <title>Perfect Clean - Limpeza Premium de Estofados</title>
     
     <!-- Favicon e PWA Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1A1F71">
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16x16.png">
+    <link rel="icon" type="image/svg+xml" href="/public/icons/favicon.svg">
+    <link rel="manifest" href="/public/manifest.json">
+    <link rel="mask-icon" href="/public/safari-pinned-tab.svg" color="#1A1F71">
     <meta name="msapplication-TileColor" content="#1A1F71">
     <meta name="theme-color" content="#1A1F71">
     
@@ -36,7 +36,7 @@
     <meta property="twitter:description" content="Limpeza premium de estofados com tecnologia avançada e atendimento de excelência.">
     <meta property="twitter:image" content="https://perfectclean.com.br/android-chrome-512x512.png">
     <!-- Optimized CSS Loading -->
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/public/assets/css/styles.css">
     
     <!-- Fallback CSS para cores básicas -->
     <style>
@@ -637,7 +637,7 @@
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js')
+                navigator.serviceWorker.register('/public/sw.js')
                     .then((registration) => {
                         console.log('SW registered: ', registration);
                     })
@@ -649,6 +649,6 @@
     </script>
     
     <!-- Advanced JavaScript with Backend Integration -->
-    <script src="/assets/js/script.js"></script>
+    <script src="/public/assets/js/script.js"></script>
 </body>
 </html>

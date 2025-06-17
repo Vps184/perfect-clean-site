@@ -2,10 +2,10 @@ const CACHE_NAME = 'perfect-clean-v1.0.0';
 const urlsToCache = [
   '/',
   '/index.html',
-  '/script.js',
-  '/dist/styles.css',
-  '/favicon.svg',
-  '/manifest.json'
+  '/public/assets/js/script.js',
+  '/public/assets/css/styles.css',
+  '/public/icons/favicon.svg',
+  '/public/manifest.json'
 ];
 
 // Install event - cache resources
@@ -153,8 +153,8 @@ self.addEventListener('push', (event) => {
   
   const options = {
     body: event.data ? event.data.text() : 'Nova notificação da Perfect Clean',
-    icon: '/favicon.svg',
-    badge: '/favicon.svg',
+    icon: '/public/icons/favicon.svg',
+    badge: '/public/icons/favicon.svg',
     tag: 'perfect-clean-notification'
   };
 
