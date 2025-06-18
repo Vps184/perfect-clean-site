@@ -6,12 +6,12 @@
     <title>Perfect Clean - Limpeza Premium de Estofados</title>
     
     <!-- Favicon e PWA Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16x16.png">
-    <link rel="icon" type="image/svg+xml" href="/public/icons/favicon.svg">
-    <link rel="manifest" href="/public/manifest.json">
-    <link rel="mask-icon" href="/public/safari-pinned-tab.svg" color="#1A1F71">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" href="/icons/favicon.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1A1F71">
     <meta name="msapplication-TileColor" content="#1A1F71">
     <meta name="theme-color" content="#1A1F71">
     
@@ -36,7 +36,7 @@
     <meta property="twitter:description" content="Limpeza premium de estofados com tecnologia avançada e atendimento de excelência.">
     <meta property="twitter:image" content="https://perfectclean.com.br/android-chrome-512x512.png">
     <!-- Optimized CSS Loading -->
-    <link rel="stylesheet" href="/public/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
     
     <!-- Fallback CSS para cores básicas -->
     <style>
@@ -45,8 +45,8 @@
         .font-playfair { font-family: 'Playfair Display', serif; }
         .bg-snow { background-color: #F8F9FA; }
         .text-gray-800 { color: #1F2937; }
-        .text-navy { color: #1A1F71; }
-        .bg-navy { background-color: #1A1F71; }
+        .text-navy { color: #13304E; }
+        .bg-navy { background-color: #13304E; }
         .bg-white { background-color: white; }
         .text-white { color: white; }
         .perfect-clean-logo { width: 50px; height: 50px; }
@@ -122,32 +122,11 @@
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-3">
-                    <svg class="perfect-clean-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Círculo principal -->
-                        <circle cx="50" cy="50" r="48" fill="#1A1F71" stroke="#D4AF37" stroke-width="2"/>
-                        
-                        <!-- Poltrona/Sofá -->
-                        <path d="M25 45 Q20 40 25 35 L35 35 Q40 30 45 35 L55 35 Q60 30 65 35 L75 35 Q80 40 75 45 L75 55 Q80 60 75 65 L25 65 Q20 60 25 55 Z" fill="#D4AF37"/>
-                        <rect x="30" y="40" width="40" height="20" rx="3" fill="#1A1F71"/>
-                        <circle cx="35" cy="45" r="2" fill="#D4AF37"/>
-                        <circle cx="50" cy="45" r="2" fill="#D4AF37"/>
-                        <circle cx="65" cy="45" r="2" fill="#D4AF37"/>
-                        
-                        <!-- Equipamento de limpeza -->
-                        <path d="M70 25 L85 25 Q90 25 90 30 L90 35 Q90 40 85 40 L70 40 Z" fill="#D4AF37"/>
-                        <rect x="72" y="27" width="15" height="3" fill="#1A1F71"/>
-                        <rect x="72" y="32" width="15" height="3" fill="#1A1F71"/>
-                        <rect x="72" y="37" width="15" height="3" fill="#1A1F71"/>
-                        
-                        <!-- Estrelas decorativas -->
-                        <path d="M20 20 L22 25 L27 25 L23 28 L25 33 L20 30 L15 33 L17 28 L13 25 L18 25 Z" fill="#D4AF37"/>
-                        <path d="M80 15 L81 18 L84 18 L82 20 L83 23 L80 21 L77 23 L78 20 L76 18 L79 18 Z" fill="#D4AF37"/>
-                        <path d="M85 70 L86 72 L88 72 L87 73 L87.5 75 L85 74 L82.5 75 L83 73 L82 72 L84 72 Z" fill="#D4AF37"/>
-                        
-                        <!-- Brilho central -->
-                        <circle cx="50" cy="50" r="8" fill="rgba(212, 175, 55, 0.3)"/>
-                        <circle cx="50" cy="50" r="4" fill="rgba(212, 175, 55, 0.5)"/>
-                    </svg>
+                    <img src="/assets/images/logo.png" 
+                         alt="Perfect Clean Logo" 
+                         class="perfect-clean-logo"
+                         width="50" 
+                         height="50">
                     <h1 class="text-2xl font-playfair font-bold text-gray-800">Perfect Clean</h1>
                 </div>
                 
@@ -521,37 +500,15 @@
     </section>
 
     <!-- Rodapé -->
-    <footer id="contato" class="bg-navy text-white py-16">
+    <footer id="contato" class="bg-navy-footer text-white py-16">
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-4 gap-8">
                 <div class="md:col-span-2">
                     <div class="flex items-center space-x-3 mb-6">
-                        <svg class="perfect-clean-logo" style="width: 60px; height: 60px;" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <!-- Círculo principal -->
-                            <circle cx="50" cy="50" r="48" fill="white" stroke="#D4AF37" stroke-width="2"/>
-                            
-                            <!-- Poltrona/Sofá -->
-                            <path d="M25 45 Q20 40 25 35 L35 35 Q40 30 45 35 L55 35 Q60 30 65 35 L75 35 Q80 40 75 45 L75 55 Q80 60 75 65 L25 65 Q20 60 25 55 Z" fill="#D4AF37"/>
-                            <rect x="30" y="40" width="40" height="20" rx="3" fill="#1A1F71"/>
-                            <circle cx="35" cy="45" r="2" fill="#D4AF37"/>
-                            <circle cx="50" cy="45" r="2" fill="#D4AF37"/>
-                            <circle cx="65" cy="45" r="2" fill="#D4AF37"/>
-                            
-                            <!-- Equipamento de limpeza -->
-                            <path d="M70 25 L85 25 Q90 25 90 30 L90 35 Q90 40 85 40 L70 40 Z" fill="#D4AF37"/>
-                            <rect x="72" y="27" width="15" height="3" fill="#1A1F71"/>
-                            <rect x="72" y="32" width="15" height="3" fill="#1A1F71"/>
-                            <rect x="72" y="37" width="15" height="3" fill="#1A1F71"/>
-                            
-                            <!-- Estrelas decorativas -->
-                            <path d="M20 20 L22 25 L27 25 L23 28 L25 33 L20 30 L15 33 L17 28 L13 25 L18 25 Z" fill="#D4AF37"/>
-                            <path d="M80 15 L81 18 L84 18 L82 20 L83 23 L80 21 L77 23 L78 20 L76 18 L79 18 Z" fill="#D4AF37"/>
-                            <path d="M85 70 L86 72 L88 72 L87 73 L87.5 75 L85 74 L82.5 75 L83 73 L82 72 L84 72 Z" fill="#D4AF37"/>
-                            
-                            <!-- Brilho central -->
-                            <circle cx="50" cy="50" r="8" fill="rgba(212, 175, 55, 0.3)"/>
-                            <circle cx="50" cy="50" r="4" fill="rgba(212, 175, 55, 0.5)"/>
-                        </svg>
+                        <img src="/assets/images/logo-footer.png" 
+                             alt="Perfect Clean Logo" 
+                             class="perfect-clean-logo"
+                             style="width: 60px; height: 60px;">
                         <h1 class="text-3xl font-playfair font-bold text-white">Perfect Clean</h1>
                     </div>
                     <p class="text-gray-300 mb-6 leading-relaxed">
@@ -649,6 +606,6 @@
     </script>
     
     <!-- Advanced JavaScript with Backend Integration -->
-    <script src="/public/assets/js/script.js"></script>
+    <script src="/assets/js/script.js"></script>
 </body>
 </html>

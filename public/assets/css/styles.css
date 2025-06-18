@@ -640,6 +640,8 @@ input, textarea, select {
 .perfect-clean-logo {
   height: 3rem;
   width: 3rem;
+  -o-object-fit: contain;
+     object-fit: contain;
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
@@ -704,7 +706,7 @@ input, textarea, select {
 .focus-visible {
   outline-width: 2px;
   outline-offset: 2px;
-  outline-color: #1A1F71;
+  outline-color: #13304E;
 }
 
 .loading {
@@ -1023,7 +1025,7 @@ input, textarea, select {
 
 .border-navy {
   --tw-border-opacity: 1;
-  border-color: rgb(26 31 113 / var(--tw-border-opacity, 1));
+  border-color: rgb(19 48 78 / var(--tw-border-opacity, 1));
 }
 
 .border-red-500 {
@@ -1038,11 +1040,16 @@ input, textarea, select {
 
 .bg-navy {
   --tw-bg-opacity: 1;
-  background-color: rgb(26 31 113 / var(--tw-bg-opacity, 1));
+  background-color: rgb(19 48 78 / var(--tw-bg-opacity, 1));
+}
+
+.bg-navy-footer {
+  --tw-bg-opacity: 1;
+  background-color: rgb(19 48 78 / var(--tw-bg-opacity, 1));
 }
 
 .bg-navy\/20 {
-  background-color: rgb(26 31 113 / 0.2);
+  background-color: rgb(19 48 78 / 0.2);
 }
 
 .bg-red-500 {
@@ -1073,8 +1080,8 @@ input, textarea, select {
 }
 
 .from-navy\/10 {
-  --tw-gradient-from: rgb(26 31 113 / 0.1) var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(26 31 113 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-from: rgb(19 48 78 / 0.1) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(19 48 78 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -1096,7 +1103,7 @@ input, textarea, select {
 }
 
 .to-navy\/20 {
-  --tw-gradient-to: rgb(26 31 113 / 0.2) var(--tw-gradient-to-position);
+  --tw-gradient-to: rgb(19 48 78 / 0.2) var(--tw-gradient-to-position);
 }
 
 .to-orange-400 {
@@ -1265,7 +1272,7 @@ input, textarea, select {
 
 .text-navy {
   --tw-text-opacity: 1;
-  color: rgb(26 31 113 / var(--tw-text-opacity, 1));
+  color: rgb(19 48 78 / var(--tw-text-opacity, 1));
 }
 
 .text-white {
@@ -1346,7 +1353,7 @@ input, textarea, select {
   width: 100%;
   border-radius: 0.125rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(26 31 113 / var(--tw-bg-opacity, 1));
+  background-color: rgb(19 48 78 / var(--tw-bg-opacity, 1));
   opacity: 1;
   transition-property: all;
   transition-duration: 300ms;
@@ -1455,11 +1462,11 @@ input, textarea, select {
 
 .hover\:bg-navy:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(26 31 113 / var(--tw-bg-opacity, 1));
+  background-color: rgb(19 48 78 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-navy\/90:hover {
-  background-color: rgb(26 31 113 / 0.9);
+  background-color: rgb(19 48 78 / 0.9);
 }
 
 .hover\:bg-red-600:hover {
@@ -1469,7 +1476,7 @@ input, textarea, select {
 
 .hover\:text-navy:hover {
   --tw-text-opacity: 1;
-  color: rgb(26 31 113 / var(--tw-text-opacity, 1));
+  color: rgb(19 48 78 / var(--tw-text-opacity, 1));
 }
 
 .hover\:text-white:hover {

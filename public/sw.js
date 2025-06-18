@@ -2,10 +2,10 @@ const CACHE_NAME = 'perfect-clean-v1.0.0';
 const urlsToCache = [
   '/',
   '/index.html',
-  '/public/assets/js/script.js',
-  '/public/assets/css/styles.css',
-  '/public/icons/favicon.svg',
-  '/public/manifest.json'
+  '/assets/js/script.js',
+  '/assets/css/styles.css',
+  '/icons/favicon.png',
+  '/manifest.json'
 ];
 
 // Install event - cache resources

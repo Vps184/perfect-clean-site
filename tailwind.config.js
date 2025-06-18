@@ -8,10 +8,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'navy': '#1A1F71',
+        'navy': '#13304E',
+        'navy-footer': '#13304E',
         'snow': '#F8F9FA',
         'silver': '#B0B0B0',
-        'navy-light': '#2C3E95'
+        'navy-light': '#0F2A40'
       },
       fontFamily: {
         'playfair': ['Playfair Display', 'serif'],
